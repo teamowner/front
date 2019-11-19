@@ -5,7 +5,12 @@ import App from './App'
 import router from './router'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min'
+import kbtHeader from './components/header/Header.vue'
+import kbtFooter from './components/footer/Footer.vue'
 Vue.config.productionTip = false
+
+Vue.component('my-header', kbtHeader)
+Vue.component('my-footer', kbtFooter)
 
 /* eslint-disable no-new */
 new Vue({

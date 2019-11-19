@@ -1,88 +1,96 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li>
-        <a
-          href="https://vuejs.org"
-          target="_blank"
-        >
-          Core Docs
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://forum.vuejs.org"
-          target="_blank"
-        >
-          Forum
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
-          Community Chat
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://twitter.com/vuejs"
-          target="_blank"
-        >
-          Twitter
-        </a>
-      </li>
-      <br>
-      <li>
-        <a
-          href="http://vuejs-templates.github.io/webpack/"
-          target="_blank"
-        >
-          Docs for This Template
-        </a>
-      </li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li>
-        <a
-          href="http://router.vuejs.org/"
-          target="_blank"
-        >
-          vue-router
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vuex.vuejs.org/"
-          target="_blank"
-        >
-          vuex
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vue-loader.vuejs.org/"
-          target="_blank"
-        >
-          vue-loader
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
-          awesome-vue
-        </a>
-      </li>
-    </ul>
-    <button type="button" class="btn btn-primary">ceshi </button>
-    <button type="button" class="btn btn-success">ceshi </button>
-    <button type="button" class="btn btn-danger">ceshi </button>
+  <div class="container">
+    <div class="row clearfix">
+      <div class="col-md-12 column">
+        <div class="jumbotron">
+          <h1>
+            大众汽车
+          </h1>
+          <p>
+            This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+          </p>
+          <p>
+            <a class="btn btn-primary btn-large" href="#">
+              <font style="color:#fff">
+                Learn more
+              </font>
+            </a>
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img alt="300x200" style="width:300px;height:200px;" src="../assets/img/timg.jpg" />
+              <div class="caption">
+                <h3>
+                  Thumbnail label
+                </h3>
+                <p>
+                  Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                </p>
+                <p>
+                  <a class="btn btn-primary" href="#">
+                    <font style="color:#fff">
+                      Action
+                    </font></a> <a class="btn" href="#">
+                    <font style="color:#fff">
+                      Action
+                    </font>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img alt="300x200" style="width:300px;height:200px;" src="../assets/img/timg2.jpg" />
+              <div class="caption">
+                <h3>
+                  Thumbnail label
+                </h3>
+                <p>
+                  Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                </p>
+                <p>
+                  <a class="btn btn-primary" href="#">
+                      <font style="color:#fff">
+                        Action
+                      </font>
+                    </a> <a class="btn" href="#">
+                    <font style="color:#fff">
+                      Action
+                    </font>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img alt="300x200" style="width:300px;height:200px;" src="../assets/img/timg3.jpg" />
+              <div class="caption">
+                <h3>
+                  Thumbnail label
+                </h3>
+                <p>
+                  Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                </p>
+                <p>
+                  <a class="btn btn-primary" href="#">
+                    <font style="color:#fff">
+                      Action
+                    </font></a> <a class="btn" href="#">
+                      <font style="color:#fff">
+                      Action
+                    </font>
+                    </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -91,6 +99,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
+      radasd: 'asdadasdas',
       msg: 'Welcome to Your Vue.js App'
     }
   }
