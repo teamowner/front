@@ -101,6 +101,8 @@
 </template>
 
 <script>
+
+import axios from 'axios';
 export default {
   name: 'Header',
   data () {
@@ -114,7 +116,16 @@ export default {
   methods:{   
     login: function() {
       alert(JSON.stringify(this.formMess));  
-    }
+       axios
+        .post('/user/login',this.formMess)
+        .then(successResponse => {
+          this.responseResult = JSON.stringify(successResponse.data)
+          if (successResponse.data.code === 200) {
+            console.log(111);
+          }
+        })
+        .catch(failResponse => {})
+      }
   }
 }
 </script>

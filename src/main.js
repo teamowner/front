@@ -8,6 +8,9 @@ import 'bootstrap/dist/js/bootstrap.min'
 import kbtHeader from './components/header/Header.vue'
 import kbtFooter from './components/footer/Footer.vue'
 Vue.config.productionTip = false
+import axios from 'axios';
+
+axios.defaults.baseURL = 'https://9.110.204.64:8080/api'
 
 Vue.component('my-header', kbtHeader)
 Vue.component('my-footer', kbtFooter)
