@@ -10,7 +10,8 @@ import kbtFooter from './components/footer/Footer.vue'
 Vue.config.productionTip = false
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://9.110.204.64:8080/api'
+axios.defaults.baseURL = '/api'
+axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 
 Vue.component('my-header', kbtHeader)
 Vue.component('my-footer', kbtFooter)
